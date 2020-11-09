@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Rishi | Portfolio" />
+    <meta name="description" content="Hi, I am a Web Designer." />
+    <meta name="theme" content="#feebc8" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rishi | Portfolio</title>
+  </head>
+  <body class="relative bg-orange-200 font-roboto antialiased">
+    <!-- Background Image -->
+    <div
+      id="backImage"
+      class="absolute inset-0 w-full h-full bg-contain bg-repeat-y z-10"
+      style="background-image: url(./media/leaves.svg)"
+    ></div>
+    <main class="w-full h-full overflow-x-hidden z-20">
+      <!-- Hero -->
+      <section class="w-full min-h-screen flex justify-center items-center">
+        <article
+          class="max-w-screen-xl w-full mx-auto px-4 md:px-12 lg:px-24"
+        ></article>
+      </section>
+    </main>
+
+    <script>
+      var leaves = document.querySelector("#backImage");
+
+      // https://stackoverflow.com/questions/31223341/detecting-scroll-direction
+
+      var lastScrollTop = 0;
+
+      window.addEventListener(
+        "scroll",
+        function () {
+        setTimeout(() => {
+  leaves.classList.remove('down')
+}, 1000);
+          var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+          if (st > lastScrollTop) {
+            // downscroll code
+            console.log("down");
+            leaves.classList.add('down');
+          } else {
+            // upscroll code
+            console.log("up");
+          }
+          lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
