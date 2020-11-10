@@ -5,4 +5,38 @@ html {
 body {
   height: 300vh;
 }
+
+.backImage {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 100ms ease;
+  transition: -webkit-transform 100ms ease;
+  transition: transform 100ms ease;
+  transition: transform 100ms ease, -webkit-transform 100ms ease;
+  will-change: auto;
+}
+
+.gradBG {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, #fffaf0), color-stop(80%, #fffaf0), to(transparent));
+  background: linear-gradient(to right, transparent, #fffaf0 20%, #fffaf0 80%, transparent);
+}
+
+@media screen and (min-width: 768px) {
+  .gradBG {
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(35%, #fffaf0), color-stop(65%, #fffaf0), to(transparent));
+    background: linear-gradient(to right, transparent, #fffaf0 35%, #fffaf0 65%, transparent);
+  }
+}
+
+.bigLeavesUpper {
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-70%);
+          transform: translateX(-50%) translateY(-70%);
+}
+
+.bigLeavesLower {
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(70%) scale(-1);
+          transform: translateX(-50%) translateY(70%) scale(-1);
+}
 /*# sourceMappingURL=styles.css.map */

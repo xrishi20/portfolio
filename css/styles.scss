@@ -1,7 +1,45 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    height: 300vh;
+  height: 300vh;
+}
+
+.backImage {
+  transform: translate3d(0, 0, 0);
+  transition: transform 100ms ease;
+  will-change: auto;
+}
+
+.gradBG {
+  background: linear-gradient(
+    to right,
+    transparent,
+    #fffaf0 20%,
+    #fffaf0 80%,
+    transparent
+  );
+}
+
+@media screen and (min-width: 768px) {
+  .gradBG {
+  background: linear-gradient(
+    to right,
+    transparent,
+    #fffaf0 35%,
+    #fffaf0 65%,
+    transparent
+  );
+}
+}
+
+.bigLeavesUpper {
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
+}
+
+.bigLeavesLower {
+  left: 50%;
+  transform: translateX(-50%) translateY(70%) scale(-1);
 }
