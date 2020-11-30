@@ -2,18 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  height: 300vh;
-}
-
-.backImage {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 100ms ease;
-  transition: -webkit-transform 100ms ease;
-  transition: transform 100ms ease;
-  transition: transform 100ms ease, -webkit-transform 100ms ease;
-  will-change: auto;
+#backImg {
+  z-index: -1 !important;
 }
 
 .gradBG {
@@ -38,5 +28,11 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(70%) scale(-1);
           transform: translateX(-50%) translateY(70%) scale(-1);
+}
+
+.rect {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
