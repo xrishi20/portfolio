@@ -1,13 +1,12 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    enabled: false,
-    content: ["./index.html"],
-  },
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      orange: colors.orange,
+    },
     extend: {
       fontFamily: {
         roboto: [

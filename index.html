@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Rishi | Portfolio" />
     <meta name="description" content="Hi, I am a Web Designer." />
-    <meta name="theme-color" content="#feebc8" />
+    <meta name="theme-color" content="#9A3412" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./media/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./media/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./media/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./media/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./css/tailwind.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
@@ -23,7 +41,7 @@
         style="background-image: url(./media/leaves.svg)"
       ></div>
       <!-- Hero -->
-      <section class="w-full pt-32 pb-48">
+      <section class="w-full pt-32 pb-24">
         <article class="max-w-6xl w-full mx-auto">
           <!-- Main box with leaves -->
           <div class="relative">
@@ -60,14 +78,8 @@
                   that looks <span class="italic">good</span> and make it come
                   to <span class="italic">life</span> with TailwindCSS.
                 </p>
-                <div
-                  class="border-b-8 border-orange-200 px-1 hover:border-orange-300"
-                >
-                  <a
-                    class="flex justify-center -mb-2 uppercase text-sm font-semibold tracking-wider"
-                    href="#work"
-                    >See my Work</a
-                  >
+                <div class="pBtn">
+                  <a href="#work">See my Work</a>
                 </div>
               </div>
             </div>
@@ -75,7 +87,7 @@
         </article>
       </section>
       <!-- Work -->
-      <section id="work" class="w-full pb-24">
+      <section id="work" class="w-full pt-24 pb-12">
         <article class="grid grid-cols-1 gap-32 md:gap-48">
           <!-- Card -->
           <div class="w-full bg-orange-100 shadow">
@@ -110,7 +122,7 @@
                     </p>
                   </div>
                   <!-- Link -->
-                  <a href="#" class="flex items-center text-orange-800 hover:text-orange-700 hover:underline">
+                  <a href="#" class="tBtn">
                     <span>Check it out</span>
                     <svg
                       class="w-4 h-4 flex-shrink-0 ml-1"
@@ -147,7 +159,9 @@
                 />
               </div>
               <!-- Info -->
-              <div class="w-full flex full md:col-start-1 md:row-start-1 md:pr-12">
+              <div
+                class="w-full flex full md:col-start-1 md:row-start-1 md:pr-12"
+              >
                 <div
                   class="w-full flex-1 py-4 flex flex-col justify-between items-start"
                 >
@@ -164,7 +178,61 @@
                     </p>
                   </div>
                   <!-- Link -->
-                  <a href="#" class="flex items-center text-orange-800 hover:text-orange-700 hover:underline">
+                  <a href="#" class="tBtn">
+                    <span>Check it out</span>
+                    <svg
+                      class="w-4 h-4 flex-shrink-0 ml-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full bg-orange-100 shadow">
+            <div
+              class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 px-6 sm:px-12"
+            >
+              <!-- Image Box -->
+              <div
+                class="rect rounded-lg shadow-md w-full flex-shrink-0 -mt-12 md:-mb-12"
+              >
+                <img
+                  class="absolute w-full h-full top-0 left-0 object-cover z-20"
+                  src="https://images.unsplash.com/photo-1476842321362-f5bb3a58ab25?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80"
+                  alt="project"
+                />
+              </div>
+              <!-- Info -->
+              <div class="w-full flex full md:pl-12">
+                <div
+                  class="w-full flex-1 py-4 flex flex-col justify-between items-start"
+                >
+                  <!-- Title & Info -->
+                  <div class="w-full mb-6">
+                    <h6
+                      class="font-pacifico text-lg md:text-xl text-orange-800"
+                    >
+                      Title Hehe
+                    </h6>
+                    <p class="text-orange-700 text-sm md:text-base">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Veniam, accusantium!
+                    </p>
+                  </div>
+                  <!-- Link -->
+                  <a href="#" class="tBtn">
                     <span>Check it out</span>
                     <svg
                       class="w-4 h-4 flex-shrink-0 ml-1"
@@ -187,26 +255,14 @@
           </div>
         </article>
       </section>
+      <!-- About & Contact -->
+      <section class="w-full">
+        <article class="max-w-6xl w-full mx-auto px-6 sm:px-12">
+          
+        </article>
+      </section>
+      <!-- Footer -->
+      <footer class="w-full bg-orange-900 text-orange-200 p-6"></footer>
     </main>
-    <script>
-      var backImg = document.querySelector("#backImg");
-      var currentPos = window.pageYOffset;
-
-      const callDistort = function () {
-        var newPos = window.pageYOffset;
-        var diff = newPos - currentPos;
-        var speed = diff * 0.3;
-
-        backImg.style.transform = "skewY(" + speed + "deg)";
-        backImg.style.webkitTransform = "skewY(" + speed + "deg)";
-        backImg.style.MozTransform = "skewY(" + speed + "deg)";
-        backImg.style.OTransform = "skewY(" + speed + "deg)";
-        backImg.style.msTransform = "skewY(" + speed + "deg)";
-        currentPos = newPos;
-        requestAnimationFrame(callDistort);
-      };
-
-      callDistort();
-    </script>
   </body>
 </html>
