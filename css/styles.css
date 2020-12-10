@@ -1,3 +1,8 @@
+* {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,5 +39,35 @@ html {
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
+}
+
+*::-moz-selection {
+  background-color: #7c2d12;
+  color: #ffedd5;
+}
+
+*::selection {
+  background-color: #7c2d12;
+  color: #ffedd5;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ebf4ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FDBA74;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FB923C;
 }
 /*# sourceMappingURL=styles.css.map */

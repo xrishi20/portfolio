@@ -1,3 +1,7 @@
+* {
+  touch-action: manipulation;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,14 +21,14 @@ html {
 
 @media screen and (min-width: 768px) {
   .gradBG {
-  background: linear-gradient(
-    to right,
-    transparent,
-    #fffaf0 35%,
-    #fffaf0 65%,
-    transparent
-  );
-}
+    background: linear-gradient(
+      to right,
+      transparent,
+      #fffaf0 35%,
+      #fffaf0 65%,
+      transparent
+    );
+  }
 }
 
 .bigLeavesUpper {
@@ -41,4 +45,29 @@ html {
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
+}
+
+*::selection {
+  background-color: #7c2d12;
+  color: #ffedd5;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ebf4ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FDBA74;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FB923C;
 }
