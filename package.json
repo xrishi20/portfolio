@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrishi20/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xrishi20/Portfolio/issues"
+  },
+  "homepage": "https://github.com/xrishi20/Portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.11"
+  }
+}
