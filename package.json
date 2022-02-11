@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/xrishi20/Portfolio#readme",
   "devDependencies": {
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.7",
     "tailwindcss": "^3.0.11"
   }
 }
