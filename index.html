@@ -11,9 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
     <link rel="manifest" href="./site.webmanifest" />
     <title>Rishi's Portfolio</title>
   </head>
@@ -43,14 +57,52 @@
       </div>
     </header>
     <main>
-      <section class="mt-12 px-6">
-        <article class="mx-auto w-full max-w-4xl">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil amet
-          numquam suscipit magnam voluptatem obcaecati distinctio delectus eius
-          quidem nisi, totam dignissimos placeat necessitatibus, eaque ipsa sed
-          maxime? Laudantium, eius.
+      <section class="mt-12">
+        <article
+          class="hideScrollbar flex w-full snap-x snap-mandatory items-center overflow-x-auto pr-6 md:pr-12 xl:px-[30vw]"
+        >
+          <div class="snap-start pl-6 xl:snap-center xl:pl-12">
+            <div
+              class="aspect-video w-[80vw] shrink-0 overflow-hidden rounded-lg md:w-[60vw] xl:w-[40vw]"
+            >
+              <video
+                class="h-full w-full object-cover"
+                autoplay
+                muted
+                loop
+                src="./assets/myAlchemist.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="snap-start pl-6 xl:snap-center xl:pl-12">
+            <div
+              class="aspect-video w-[80vw] shrink-0 overflow-hidden rounded-lg md:w-[60vw] xl:w-[40vw]"
+            >
+              <video
+                class="h-full w-full object-cover"
+                autoplay
+                muted
+                loop
+                src="./assets/chezLaurra.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="snap-start pl-6 xl:snap-center xl:pl-12">
+            <div
+              class="aspect-video w-[80vw] shrink-0 overflow-hidden rounded-lg md:w-[60vw] xl:w-[40vw]"
+            >
+              <video
+                class="h-full w-full object-cover"
+                autoplay
+                muted
+                loop
+                src="./assets/quizapp.mp4"
+              ></video>
+            </div>
+          </div>
         </article>
       </section>
+      <section class="py-12"></section>
     </main>
   </body>
 </html>
