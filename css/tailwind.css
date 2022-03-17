@@ -508,11 +508,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -541,32 +536,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-\[40vw\] {
-  width: 40vw;
-}
-
-.w-\[00vw\] {
-  width: 00vw;
-}
-
-.w-\[90vw\] {
-  width: 90vw;
-}
-
-.w-\[vw\] {
-  width: vw;
-}
-
 .w-\[80vw\] {
   width: 80vw;
-}
-
-.min-w-\[40vw\] {
-  min-width: 40vw;
-}
-
-.max-w-\[90vw\] {
-  max-width: 90vw;
 }
 
 .shrink-0 {
@@ -586,20 +557,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-snap-align: start;
 }
 
-.snap-center {
-  scroll-snap-align: center;
-}
-
 .items-center {
   align-items: center;
-}
-
-.gap-12 {
-  gap: 3rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -659,27 +618,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 6rem;
 }
 
-.px-\[30vw\] {
-  padding-left: 30vw;
-  padding-right: 30vw;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .pl-6 {
   padding-left: 1.5rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
 }
 
 .text-center {
@@ -828,25 +777,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0.75rem;
   }
 
-  .md\:w-\[\] {
-    width: ;
-  }
-
   .md\:w-\[60vw\] {
     width: 60vw;
-  }
-
-  .md\:snap-center {
-    scroll-snap-align: center;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-
-  .md\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .md\:pr-12 {
@@ -864,11 +796,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
-  .xl\:mx-6 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
   .xl\:w-\[40vw\] {
     width: 40vw;
   }
@@ -880,11 +807,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:px-\[30vw\] {
     padding-left: 30vw;
     padding-right: 30vw;
-  }
-
-  .xl\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .xl\:pl-12 {
