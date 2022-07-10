@@ -1,369 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Rishi | Portfolio" />
-    <meta name="description" content="Hi, I am a Web Designer." />
-    <meta name="theme-color" content="#9A3412" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./media/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./media/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./media/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./media/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="./css/tailwind.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Rishi | Portfolio</title>
-  </head>
-  <body class="relative bg-orange-200 font-roboto font-medium antialiased">
-    <main class="w-full h-full relative overflow-hidden space-y-24">
-      <!-- Background Image -->
-      <div
-        id="backImg"
-        class="absolute inset-0 w-full h-full bg-contain bg-repeat"
-        style="background-image: url(./media/leaves.svg)"
-      ></div>
-      <!-- Hero -->
-      <section class="w-full pt-20 pb-16 md:pt-32 md:pb-24">
-        <article class="max-w-6xl w-full mx-auto">
-          <!-- Main box with leaves -->
-          <div class="relative">
-            <img
-              class="bigLeavesUpper absolute top-0 max-w-xl w-full z-40 px-12"
-              src="./media/bigLeaves.svg"
-              alt="leaves"
-            />
-            <img
-              class="bigLeavesLower absolute bottom-0 max-w-xl w-full z-40 px-12"
-              src="./media/bigLeaves.svg"
-              alt="leaves"
-            />
-            <!-- Content -->
-            <div
-              class="relative w-full px-4 md:px-12 lg:px-24 py-8 gradBG z-50"
-            >
-              <div
-                class="max-w-sm w-full mx-auto flex flex-col items-center text-center text-orange-700"
-              >
-                <h6
-                  class="w-full font-pacifico text-base sm:text-xl leading-tight mb-4"
-                >
-                  Bello! I am Rishi
-                </h6>
-                <h1
-                  class="w-full text-3xl sm:text-5xl font-black uppercase text-orange-800 leading-none mb-2"
-                >
-                  I Design Stuff
-                </h1>
-                <p
-                  class="w-full text-sm sm:text-lg px-12 md:px-8 leading-snug mb-4"
-                >
-                  that looks <span class="italic">good</span> and make it come
-                  to <span class="italic">life</span> with TailwindCSS.
-                </p>
-                <div class="pBtn">
-                  <a href="#work" title="Scroll you LAZY!">See my Work</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-      <!-- Work -->
-      <section id="work" class="w-full pt-24 md:pb-12">
-        <article class="grid grid-cols-1 gap-32 md:gap-48">
-          <!-- myAlchemist -->
-          <div class="w-full bg-orange-100 shadow">
-            <div
-              class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 px-6 sm:px-12"
-            >
-              <!-- Image Box -->
-              <div
-                class="rect rounded-lg shadow-md w-full flex-shrink-0 -mt-12 md:-mb-12"
-              >
-                <video
-                  class="video"
-                  width="160"
-                  height="90"
-                  autoplay
-                  loop
-                  muted
-                >
-                  <source src="./media/myAlchemist.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <!-- Info -->
-              <div class="w-full flex full md:pl-12">
-                <div
-                  class="w-full flex-1 py-4 flex flex-col justify-between items-start"
-                >
-                  <!-- Title & Info -->
-                  <div class="w-full mb-6">
-                    <h6
-                      class="font-pacifico text-lg md:text-xl text-orange-800 mb-2"
-                    >
-                      myAlchemist
-                    </h6>
-                    <p class="text-orange-700 text-sm md:text-base">
-                      A website to find and hire Alchemists anywhere based on your location. Click on the logo to visit the Home Page.
-                    </p>
-                  </div>
-                  <!-- Link -->
-                  <a href="https://xrishi20.github.io/myAlchemist/become.html" class="tBtn">
-                    <span>Check it out</span>
-                    <svg
-                      class="w-4 h-4 flex-shrink-0 ml-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Chez Laurra -->
-          <div class="w-full bg-orange-100 shadow">
-            <div
-              class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 px-6 sm:px-12"
-            >
-              <!-- Image Box -->
-              <div
-                class="rect rounded-lg shadow-md w-full flex-shrink-0 -mt-12 md:-mb-12 md:col-start-2"
-              >
-                <video
-                  class="video"
-                  width="160"
-                  height="90"
-                  autoplay
-                  loop
-                  muted
-                >
-                  <source src="./media/chezLaurra.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <!-- Info -->
-              <div
-                class="w-full flex full md:col-start-1 md:row-start-1 md:pr-12"
-              >
-                <div
-                  class="w-full flex-1 py-4 flex flex-col justify-between items-start"
-                >
-                  <!-- Title & Info -->
-                  <div class="w-full mb-6">
-                    <h6
-                      class="font-pacifico text-lg md:text-xl text-orange-800 mb-2"
-                    >
-                      Chez Laurra
-                    </h6>
-                    <p class="text-orange-700 text-sm md:text-base">
-                      A personal website to post and share recipes of different categories with comment system for reviews.
-                    </p>
-                  </div>
-                  <!-- Link -->
-                  <a href="https://xrishi20.github.io/ChezLaurra/" class="tBtn">
-                    <span>Check it out</span>
-                    <svg
-                      class="w-4 h-4 flex-shrink-0 ml-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Quiz App -->
-          <div class="w-full bg-orange-100 shadow">
-            <div
-              class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 px-6 sm:px-12"
-            >
-              <!-- Image Box -->
-              <div
-                class="rect rounded-lg shadow-md w-full flex-shrink-0 -mt-12 md:-mb-12"
-              >
-                <video
-                  class="video"
-                  width="160"
-                  height="90"
-                  autoplay
-                  loop
-                  muted
-                >
-                  <source src="./media/quizapp.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <!-- Info -->
-              <div class="w-full flex full md:pl-12">
-                <div
-                  class="w-full flex-1 py-4 flex flex-col justify-between items-start"
-                >
-                  <!-- Title & Info -->
-                  <div class="w-full mb-6">
-                    <h6
-                      class="font-pacifico text-lg md:text-xl text-orange-800 mb-2"
-                    >
-                      Quiz App
-                    </h6>
-                    <p class="text-orange-700 text-sm md:text-base">
-                      Play fun quiz and test your knowledge across 6 different
-                      categories. Designed and coded by me & my friend.
-                    </p>
-                  </div>
-                  <!-- Link -->
-                  <a href="https://tepesalexandru.github.io/quizapp/" class="tBtn">
-                    <span>Check it out</span>
-                    <svg
-                      class="w-4 h-4 flex-shrink-0 ml-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-      <!-- About & Contact -->
-      <section class="w-full pt-6">
-        <article class="max-w-6xl w-full mx-auto px-6 sm:px-12">
-          <p
-            class="text-orange-900 text-xl md:text-3xl text-center leading-relaxed md:leading-loose mb-8"
-          >
-            Hey there! I'm a 19 y/o student from India. I am an intermediate level
-            Visual designer. I know HTML, CSS pretty well and I can write
-            functional Javascript too. I'm also pretty good with Figma & love coding
-            with Tailwind CSS.
-          </p>
-          <!-- Socials -->
-          <div class="w-full mx-auto flex justify-center">
-            <!-- Github -->
-            <a
-              class="socialIcon"
-              href="https://github.com/xrishi20"
-              title="Github"
-            >
-              <svg
-                class="h-5 w-5"
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M24.0002 0C10.818 0 0 10.8179 0 24C0 35.2489 7.89337 45.4673 18.3751 48V40.0598C17.3366 40.2872 16.3807 40.2938 15.3235 39.9822C13.9051 39.5636 12.7527 38.6188 11.8972 37.1781C11.3519 36.2582 10.3855 35.2606 9.37727 35.3339L9.13007 32.5323C11.3101 32.3456 13.1961 33.8606 14.3157 35.7415C14.813 36.5779 15.3854 37.0682 16.12 37.285C16.8301 37.4941 17.5925 37.3938 18.481 37.08C18.704 35.3013 19.5188 34.6355 20.1344 33.698V33.6965C13.8832 32.7642 11.3918 29.4478 10.403 26.8301C9.09272 23.3544 9.79585 19.0122 12.1129 16.2682C12.1579 16.2147 12.2392 16.0748 12.2077 15.9771C11.1453 12.7679 12.4399 10.1133 12.4875 9.83167C13.7136 10.1942 13.9128 9.46692 17.8134 11.8367L18.4876 12.2417C18.7696 12.4098 18.6809 12.3138 18.9629 12.2926C20.5915 11.8502 22.3083 11.606 23.9998 11.584C25.7042 11.606 27.41 11.8502 29.1059 12.3105L29.3242 12.3325C29.3052 12.3296 29.3835 12.3186 29.515 12.2402C34.3875 9.28894 34.2124 10.2535 35.5191 9.82874C35.5663 10.1107 36.8437 12.8086 35.7926 15.9771C35.6509 16.4136 40.0169 20.4115 37.597 26.829C36.6082 29.4478 34.1172 32.7642 27.8659 33.6965V33.698C28.6672 34.9193 29.63 35.569 29.6249 38.0885V48C40.107 45.4673 48 35.2489 48 24C48.0004 10.8179 37.1824 0 24.0002 0V0Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-            <!-- Email -->
-            <a
-              class="socialIcon mx-6"
-              href="mailto:xrishi20@gmail.com"
-              title="xrishi20@gmail.com"
-            >
-              <svg
-                class="h-5 w-5"
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M21.647 23.7538C22.9004 24.5894 25.0996 24.5895 26.3532 23.7537C26.3534 23.7536 26.3537 23.7534 26.3539 23.7533L47.7164 9.51155C47.0157 7.48503 45.0897 6.02515 42.828 6.02515H5.17183C2.91009 6.02515 0.984173 7.48503 0.283386 9.51155L21.6464 23.7534C21.6466 23.7536 21.6468 23.7536 21.647 23.7538Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M27.9139 26.0934C27.9136 26.0936 27.9134 26.0938 27.9132 26.0939C26.8162 26.8252 25.4079 27.191 24 27.191C22.5919 27.191 21.1841 26.8253 20.0869 26.0938C20.0868 26.0937 20.0867 26.0936 20.0865 26.0935L0 12.7026V36.8033C0 39.6549 2.32005 41.9749 5.17185 41.9749H42.8283C45.68 41.9749 48 39.6549 48 36.8033V12.7026L27.9139 26.0934Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="48" height="48" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <!-- Twitter -->
-            <a
-              class="socialIcon"
-              href="https://twitter.com/xrishi20"
-              title="Twitter"
-            >
-              <svg
-                class="h-5 w-5"
-                width="48"
-                height="40"
-                viewBox="0 0 48 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M47.2366 4.65324C46.1701 5.12702 45.063 5.50079 43.927 5.77138C45.1788 4.57973 46.1199 3.08922 46.6509 1.42555C46.8024 0.950603 46.2875 0.539902 45.8594 0.794201C44.279 1.73331 42.5767 2.43782 40.7996 2.88839C40.6965 2.91453 40.5902 2.92778 40.4834 2.92778C40.1597 2.92778 39.845 2.80737 39.5975 2.58883C37.7068 0.919416 35.2751 0 32.7504 0C31.6579 0 30.5549 0.170588 29.4719 0.507074C26.1165 1.54971 23.5275 4.32262 22.7152 7.74375C22.4104 9.02697 22.3279 10.3114 22.4698 11.5612C22.486 11.7048 22.4183 11.805 22.3765 11.8521C22.3031 11.9345 22.1991 11.9817 22.091 11.9817C22.079 11.9817 22.0666 11.9811 22.0543 11.98C14.7093 11.2963 8.08596 7.75126 3.40421 1.99793C3.16548 1.70447 2.70766 1.74047 2.51737 2.06746C1.60056 3.6432 1.11606 5.44545 1.11606 7.27936C1.11606 10.0899 2.24317 12.7385 4.20095 14.6694C3.37765 14.4738 2.5808 14.1658 1.84059 13.754C1.48248 13.5546 1.04187 13.8108 1.03684 14.2212C0.985577 18.3964 3.42563 22.1116 7.08091 23.7845C7.0073 23.7863 6.93369 23.7871 6.85996 23.7871C6.28055 23.7871 5.69389 23.7311 5.11646 23.6205C4.71318 23.5434 4.37438 23.9266 4.49961 24.3183C5.68604 28.0292 8.87532 30.7644 12.6919 31.3855C9.52436 33.5157 5.83572 34.6393 1.99659 34.6393L0.799735 34.6386C0.430977 34.6386 0.119095 34.8794 0.0251203 35.2373C-0.0674496 35.5897 0.103062 35.9615 0.417518 36.1447C4.74361 38.667 9.67814 40 14.6898 40C19.0766 40 23.1801 39.1278 26.8864 37.4079C30.2841 35.8311 33.2866 33.5771 35.8105 30.7085C38.1616 28.0363 40.0001 24.9516 41.2748 21.54C42.4899 18.2881 43.1322 14.8182 43.1322 11.5054V11.3476C43.132 10.8156 43.3722 10.3151 43.7911 9.97441C45.381 8.68123 46.7654 7.15895 47.9059 5.4499C48.207 4.99864 47.7321 4.43306 47.2366 4.65324Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-          </div>
-        </article>
-      </section>
-      <!-- Footer -->
-      <footer class="w-full bg-orange-900 text-orange-300 p-6">
-        <p class="text-xs text-center">
-          Website designed and coded with TailwindCSS by me. Leaves SVG(s) are by <a class="underline text-orange-100" href="http://www.freepik.com/" title="Freepik">Freepik</a>.
-        </p>
-      </footer>
-    </main>
-  </body>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/tailwind.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./site.webmanifest" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<title>Rishi's Portfolio</title>
+	</head>
+	<body
+		class="min-h-screen bg-gray-50 text-black [font-family:_'Inter',_sans-serif] selection:bg-indigo-500 selection:text-white dark:bg-[#191919] dark:text-white"
+	>
+		<header class="relative w-full bg-white shadow-md dark:bg-black">
+			<div
+				class="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat dark:animate-pulse dark:blur-sm"
+				style="background-image: url('./assets/pattern.svg')"
+			></div>
+			<div class="bg-white/50 dark:bg-black/50">
+				<div
+					class="relative z-10 w-full bg-cover bg-center bg-no-repeat px-6 py-24 text-center sm:px-12 sm:py-32"
+					style="background-image: url('./assets/pattern.svg')"
+				>
+					<h2 class="text-2xl font-medium md:text-5xl">
+						Hello There!
+					</h2>
+					<h2
+						class="mt-1 text-2xl md:mt-3 md:text-5xl md:leading-tight"
+					>
+						I am
+						<span class="underline decoration-orange-400"
+							>Rishi</span
+						>, a
+						<span class="italic">passionate</span>
+						<br />
+						<span class="underline decoration-indigo-400"
+							>Front-End Web Developer</span
+						>
+					</h2>
+				</div>
+			</div>
+		</header>
+		<main class="py-12 xl:py-16">
+			<section class="w-full">
+				<article
+					class="hideScrollbar swiper mySwiper flex w-full items-center"
+				>
+					<section class="swiper-wrapper">
+						<!-- Slide -->
+						<article
+							class="swiper-slide w-full shrink-0 overflow-hidden rounded-lg"
+						>
+							<div class="group relative aspect-video w-full">
+								<video
+									class="h-full w-full object-cover"
+									autoplay
+									muted
+									loop
+									src="./assets/myAlchemist.mp4"
+								></video>
+								<div
+									class="grid place-items-center bg-gradient-to-br from-indigo-200/95 to-indigo-600/95 p-2 transition-opacity xl:absolute xl:inset-0 xl:from-rose-200/95 xl:to-indigo-600/95 xl:opacity-0 xl:group-hover:opacity-100"
+								>
+									<a
+										href="https://xrishi20.github.io/myAlchemist/become.html"
+										class="select-none text-xl font-medium text-white underline decoration-sky-300 xl:text-4xl"
+									>
+										Check it out
+									</a>
+								</div>
+							</div>
+						</article>
+						<!-- Slide -->
+						<article
+							class="swiper-slide w-full shrink-0 overflow-hidden rounded-lg"
+						>
+							<div class="group relative aspect-video w-full">
+								<video
+									class="h-full w-full object-cover"
+									autoplay
+									muted
+									loop
+									src="./assets/chezLaurra.mp4"
+								></video>
+								<div
+									class="grid place-items-center bg-gradient-to-br from-orange-200/95 to-red-400/95 p-2 transition-opacity xl:absolute xl:inset-0 xl:opacity-0 xl:group-hover:opacity-100"
+								>
+									<a
+										href="https://xrishi20.github.io/ChezLaurra/"
+										class="select-none text-xl font-medium text-white underline decoration-yellow-300 xl:text-4xl"
+									>
+										Check it out
+									</a>
+								</div>
+							</div>
+						</article>
+						<!-- Slide -->
+						<article
+							class="swiper-slide w-full shrink-0 overflow-hidden rounded-lg"
+						>
+							<div class="group relative aspect-video w-full">
+								<video
+									class="h-full w-full object-cover"
+									autoplay
+									muted
+									loop
+									src="./assets/quizapp.mp4"
+								></video>
+								<div
+									class="grid place-items-center bg-gradient-to-br from-sky-200/95 to-blue-600/95 p-2 transition-opacity xl:absolute xl:inset-0 xl:opacity-0 xl:group-hover:opacity-100"
+								>
+									<a
+										href="https://tepesalexandru.github.io/quizapp/"
+										class="select-none text-xl font-medium text-white underline decoration-sky-200 xl:text-4xl"
+									>
+										Check it out
+									</a>
+								</div>
+							</div>
+						</article>
+					</section>
+				</article>
+			</section>
+			<section class="mt-16 px-6 sm:px-12 xl:mt-24">
+				<p
+					class="px-6 text-center text-lg text-slate-700 dark:text-slate-300 md:text-xl xl:text-3xl"
+				>
+					I don't use any Social Media so here's all I have
+				</p>
+				<article
+					class="mt-6 flex items-center justify-center gap-4 xl:mt-8"
+				>
+					<a
+						href="https://github.com/xrishi20"
+						class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-orange-400 text-white hover:bg-orange-500 dark:bg-white dark:text-black dark:hover:bg-white dark:hover:text-orange-400"
+					>
+						<svg
+							class="h-8 w-8"
+							width="512"
+							height="512"
+							viewBox="0 0 512 512"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0_212_21)">
+								<path
+									d="M256 10.6667C114.56 10.6667 0 123.307 0 262.229C0 373.397 73.344 467.669 175.04 500.907C187.84 503.275 192.533 495.488 192.533 488.811C192.533 482.837 192.32 467.008 192.213 446.037C121.003 461.205 105.984 412.288 105.984 412.288C94.336 383.253 77.504 375.488 77.504 375.488C54.3147 359.893 79.296 360.213 79.296 360.213C105.003 361.963 118.507 386.133 118.507 386.133C141.333 424.597 178.432 413.483 193.067 407.061C195.371 390.784 201.963 379.712 209.28 373.419C152.427 367.125 92.672 345.493 92.672 249.109C92.672 221.653 102.592 199.211 119.019 181.611C116.139 175.253 107.499 149.675 121.259 115.029C121.259 115.029 142.699 108.288 191.659 140.821C212.139 135.232 233.899 132.459 255.659 132.331C277.419 132.459 299.179 135.232 319.659 140.821C368.299 108.288 389.739 115.029 389.739 115.029C403.499 149.675 394.859 175.253 392.299 181.611C408.619 199.211 418.539 221.653 418.539 249.109C418.539 345.749 358.699 367.019 301.739 373.205C310.699 380.757 319.019 396.181 319.019 419.755C319.019 453.419 318.699 480.469 318.699 488.64C318.699 495.232 323.179 503.104 336.299 500.587C438.72 467.563 512 373.227 512 262.229C512 123.307 397.376 10.6667 256 10.6667Z"
+									fill="currentColor"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_212_21">
+									<rect
+										width="512"
+										height="512"
+										fill="currentColor"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<a
+						href="mailto:xrishi20@gmail.com"
+						class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 dark:bg-white dark:text-black dark:hover:bg-white dark:hover:text-blue-600"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-8 w-8"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+							/>
+						</svg>
+					</a>
+				</article>
+			</section>
+		</main>
+		<footer class="bg-white py-4 dark:bg-black">
+			<p
+				class="px-6 text-center text-sm text-slate-700 dark:text-gray-500"
+			>
+				Website Designed &amp; Coded by me using
+				<a href="https://tailwindcss.com/" class="underline">
+					TailwindCSS
+				</a>
+			</p>
+		</footer>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: "1.15",
+				spaceBetween: 20,
+				centeredSlides: true,
+				breakpoints: {
+					768: {
+						slidesPerView: "1.5",
+						spaceBetween: 40,
+					},
+					1280: {
+						slidesPerView: "1.75",
+						spaceBetween: 60,
+					},
+				},
+			});
+		</script>
+	</body>
 </html>
