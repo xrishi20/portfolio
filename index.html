@@ -1,108 +1,240 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/tailwind.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon-16x16.png"
-    />
-    <link rel="manifest" href="./site.webmanifest" />
-    <title>Rishi's Portfolio</title>
-  </head>
-  <body
-    class="min-h-screen bg-gray-50 text-black [font-family:_'Inter',_sans-serif] selection:bg-indigo-500 selection:text-white dark:bg-[#070707] dark:text-white"
-  >
-    <header class="relative w-full bg-white shadow-md dark:bg-black">
-      <div
-        class="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat dark:animate-pulse dark:blur"
-        style="background-image: url('./assets/pattern.svg')"
-      ></div>
-      <div class="bg-white/50 dark:bg-black/50">
-        <div
-          class="relative z-10 w-full bg-cover bg-center bg-no-repeat px-6 py-24 text-center sm:px-12 sm:py-32"
-          style="background-image: url('./assets/pattern.svg')"
-        >
-          <h2 class="text-2xl font-medium md:text-5xl">Hello There!</h2>
-          <h2 class="mt-1 text-2xl md:mt-3 md:text-5xl md:leading-tight">
-            I am <span class="underline decoration-orange-400">Rishi</span>, a
-            <span class="italic">passionate</span>
-            <br />
-            <span class="underline decoration-indigo-400"
-              >Front-End Web Developer</span
-            >
-          </h2>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="mt-12">
-        <article
-          class="hideScrollbar flex w-full snap-x snap-mandatory items-center overflow-x-auto pr-6 md:pr-12 xl:px-[30vw]"
-        >
-          <div class="snap-start pl-6 xl:snap-center xl:pl-12">
-            <div
-              class="aspect-video w-[80vw] shrink-0 overflow-hidden rounded-lg md:w-[60vw] xl:w-[40vw]"
-            >
-              <video
-                class="h-full w-full object-cover"
-                autoplay
-                muted
-                loop
-                src="./assets/myAlchemist.mp4"
-              ></video>
-            </div>
-          </div>
-          <div class="snap-start pl-6 xl:snap-center xl:pl-12">
-            <div
-              class="aspect-video w-[80vw] shrink-0 overflow-hidden rounded-lg md:w-[60vw] xl:w-[40vw]"
-            >
-              <video
-                class="h-full w-full object-cover"
-                autoplay
-                muted
-                loop
-                src="./assets/chezLaurra.mp4"
-              ></video>
-            </div>
-          </div>
-          <div class="snap-start pl-6 xl:snap-center xl:pl-12">
-            <div
-              class="aspect-video w-[80vw] shrink-0 overflow-hidden rounded-lg md:w-[60vw] xl:w-[40vw]"
-            >
-              <video
-                class="h-full w-full object-cover"
-                autoplay
-                muted
-                loop
-                src="./assets/quizapp.mp4"
-              ></video>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="py-12"></section>
-    </main>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/tailwind.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./site.webmanifest" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<title>Rishi's Portfolio</title>
+	</head>
+	<body
+		class="min-h-screen bg-gray-50 text-black [font-family:_'Inter',_sans-serif] selection:bg-indigo-500 selection:text-white dark:bg-[#191919] dark:text-white"
+	>
+		<header class="relative w-full bg-white shadow-md dark:bg-black">
+			<div
+				class="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat dark:animate-pulse dark:blur-sm"
+				style="background-image: url('./assets/pattern.svg')"
+			></div>
+			<div class="bg-white/50 dark:bg-black/50">
+				<div
+					class="relative z-10 w-full bg-cover bg-center bg-no-repeat px-6 py-24 text-center sm:px-12 sm:py-32"
+					style="background-image: url('./assets/pattern.svg')"
+				>
+					<h2 class="text-2xl font-medium md:text-5xl">
+						Hello There!
+					</h2>
+					<h2
+						class="mt-1 text-2xl md:mt-3 md:text-5xl md:leading-tight"
+					>
+						I am
+						<span class="underline decoration-orange-400"
+							>Rishi</span
+						>, a
+						<span class="italic">passionate</span>
+						<br />
+						<span class="underline decoration-indigo-400"
+							>Front-End Web Developer</span
+						>
+					</h2>
+				</div>
+			</div>
+		</header>
+		<main class="py-12 xl:py-16">
+			<section class="w-full">
+				<article
+					class="hideScrollbar swiper mySwiper flex w-full items-center"
+				>
+					<section class="swiper-wrapper">
+						<!-- Slide -->
+						<article
+							class="swiper-slide w-full shrink-0 overflow-hidden rounded-lg"
+						>
+							<div class="group relative aspect-video w-full">
+								<video
+									class="h-full w-full object-cover"
+									autoplay
+									muted
+									loop
+									src="./assets/myAlchemist.mp4"
+								></video>
+								<div
+									class="grid place-items-center bg-gradient-to-br from-indigo-200/95 to-indigo-600/95 p-2 transition-opacity xl:absolute xl:inset-0 xl:from-rose-200/95 xl:to-indigo-600/95 xl:opacity-0 xl:group-hover:opacity-100"
+								>
+									<a
+										href="https://xrishi20.github.io/myAlchemist/become.html"
+										class="select-none text-xl font-medium text-white underline decoration-sky-300 xl:text-4xl"
+									>
+										Check it out
+									</a>
+								</div>
+							</div>
+						</article>
+						<!-- Slide -->
+						<article
+							class="swiper-slide w-full shrink-0 overflow-hidden rounded-lg"
+						>
+							<div class="group relative aspect-video w-full">
+								<video
+									class="h-full w-full object-cover"
+									autoplay
+									muted
+									loop
+									src="./assets/chezLaurra.mp4"
+								></video>
+								<div
+									class="grid place-items-center bg-gradient-to-br from-orange-200/95 to-red-400/95 p-2 transition-opacity xl:absolute xl:inset-0 xl:opacity-0 xl:group-hover:opacity-100"
+								>
+									<a
+										href="https://xrishi20.github.io/ChezLaurra/"
+										class="select-none text-xl font-medium text-white underline decoration-yellow-300 xl:text-4xl"
+									>
+										Check it out
+									</a>
+								</div>
+							</div>
+						</article>
+						<!-- Slide -->
+						<article
+							class="swiper-slide w-full shrink-0 overflow-hidden rounded-lg"
+						>
+							<div class="group relative aspect-video w-full">
+								<video
+									class="h-full w-full object-cover"
+									autoplay
+									muted
+									loop
+									src="./assets/quizapp.mp4"
+								></video>
+								<div
+									class="grid place-items-center bg-gradient-to-br from-sky-200/95 to-blue-600/95 p-2 transition-opacity xl:absolute xl:inset-0 xl:opacity-0 xl:group-hover:opacity-100"
+								>
+									<a
+										href="https://tepesalexandru.github.io/quizapp/"
+										class="select-none text-xl font-medium text-white underline decoration-sky-200 xl:text-4xl"
+									>
+										Check it out
+									</a>
+								</div>
+							</div>
+						</article>
+					</section>
+				</article>
+			</section>
+			<section class="mt-16 px-6 sm:px-12 xl:mt-24">
+				<p
+					class="px-6 text-center text-lg text-slate-700 dark:text-slate-300 md:text-xl xl:text-3xl"
+				>
+					I don't use any Social Media so here's all I have
+				</p>
+				<article
+					class="mt-6 flex items-center justify-center gap-4 xl:mt-8"
+				>
+					<a
+						href="https://github.com/xrishi20"
+						class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-orange-400 text-white hover:bg-orange-500 dark:bg-white dark:text-black dark:hover:bg-white dark:hover:text-orange-400"
+					>
+						<svg
+							class="h-8 w-8"
+							width="512"
+							height="512"
+							viewBox="0 0 512 512"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0_212_21)">
+								<path
+									d="M256 10.6667C114.56 10.6667 0 123.307 0 262.229C0 373.397 73.344 467.669 175.04 500.907C187.84 503.275 192.533 495.488 192.533 488.811C192.533 482.837 192.32 467.008 192.213 446.037C121.003 461.205 105.984 412.288 105.984 412.288C94.336 383.253 77.504 375.488 77.504 375.488C54.3147 359.893 79.296 360.213 79.296 360.213C105.003 361.963 118.507 386.133 118.507 386.133C141.333 424.597 178.432 413.483 193.067 407.061C195.371 390.784 201.963 379.712 209.28 373.419C152.427 367.125 92.672 345.493 92.672 249.109C92.672 221.653 102.592 199.211 119.019 181.611C116.139 175.253 107.499 149.675 121.259 115.029C121.259 115.029 142.699 108.288 191.659 140.821C212.139 135.232 233.899 132.459 255.659 132.331C277.419 132.459 299.179 135.232 319.659 140.821C368.299 108.288 389.739 115.029 389.739 115.029C403.499 149.675 394.859 175.253 392.299 181.611C408.619 199.211 418.539 221.653 418.539 249.109C418.539 345.749 358.699 367.019 301.739 373.205C310.699 380.757 319.019 396.181 319.019 419.755C319.019 453.419 318.699 480.469 318.699 488.64C318.699 495.232 323.179 503.104 336.299 500.587C438.72 467.563 512 373.227 512 262.229C512 123.307 397.376 10.6667 256 10.6667Z"
+									fill="currentColor"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_212_21">
+									<rect
+										width="512"
+										height="512"
+										fill="currentColor"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<a
+						href="mailto:xrishi20@gmail.com"
+						class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 dark:bg-white dark:text-black dark:hover:bg-white dark:hover:text-blue-600"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-8 w-8"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+							/>
+						</svg>
+					</a>
+				</article>
+			</section>
+		</main>
+		<footer class="bg-white py-4 dark:bg-black">
+			<p
+				class="px-6 text-center text-sm text-slate-700 dark:text-gray-500"
+			>
+				Website Designed &amp; Coded by me using
+				<a href="https://tailwindcss.com/" class="underline">
+					TailwindCSS
+				</a>
+			</p>
+		</footer>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: "1.15",
+				spaceBetween: 20,
+				centeredSlides: true,
+				breakpoints: {
+					768: {
+						slidesPerView: "1.5",
+						spaceBetween: 40,
+					},
+					1280: {
+						slidesPerView: "1.75",
+						spaceBetween: 60,
+					},
+				},
+			});
+		</script>
+	</body>
 </html>
