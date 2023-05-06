@@ -1,27 +1,27 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "tailwindcss -i ./css/input.css -o ./css/tailwind.css --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xrishi20/Portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xrishi20/Portfolio/issues"
-  },
-  "homepage": "https://github.com/xrishi20/Portfolio#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.7",
-    "tailwindcss": "^3.1.5"
-  }
+	"name": "portfolio",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tailwindcss -i ./css/input.css -o ./css/tailwind.css --watch",
+		"prod": "tailwindcss -i ./css/input.css -o ./css/tailwind.css --minify"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xrishi20/Portfolio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/xrishi20/Portfolio/issues"
+	},
+	"homepage": "https://github.com/xrishi20/Portfolio#readme",
+	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"postcss": "^8.4.23",
+		"prettier": "^2.5.1",
+		"prettier-plugin-tailwindcss": "^0.1.7",
+		"tailwindcss": "^3.3.2"
+	}
 }
